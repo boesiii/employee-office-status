@@ -149,7 +149,7 @@ def match_computer_name (pc):
             return nm
 
 
-this function was used to place the window on a certain screen            
+# this function was used to place the window on a certain screen            
 def set_window_geom (name):
     sw,sh = top.winfo_screenwidth(),top.winfo_screenheight()
     w,h = 1100,900
