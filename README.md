@@ -5,3 +5,5 @@ This program was written as an employee sign in / sign out system so that employ
 
 
 https://github.com/boesiii/employee-office-status/blob/master/sample%20gui.PNG
+
+![Screenshot](sample%20gui.PNG)
