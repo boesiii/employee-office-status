@@ -23,6 +23,7 @@ def emp_info(button_number, name):
         for line in lines:
             line = line.replace('\n','')
             line = line.split(',')
+            print (line[0])
             if line[0] == str(comp_data[button_number][0]).lower():
                 match = 'yes'
                 tkMessageBox.showinfo( 'Employee Info', str(comp_data[button_number][0]) + '\n' + 'Ext: ' + line[1] + '\n' + 'Cell #: ' + line[2])
@@ -79,10 +80,10 @@ def future():
         
 def write_history (text,button_number):
     with open(history_path + str(comp_data[button_number][0]) + ".txt", "a") as f:
-		f.writelines(text + '\n')
+        f.writelines(text + '\n')
     
     with open(init_path + '/' + str(comp_data[button_number][0]) + ".txt", "w") as f:
-		f.writelines(text)
+        f.writelines(text)
         
 def inOffice(button_number):
     rsp_act_time_in = ent_act_time_in[button_number].get()
@@ -193,6 +194,7 @@ top.wm_title("Sign In Sign Out")
 #folder locations
 history_path = "emp\\"
 init_path = 'init'
+emp_info_path = 'emp\\'
 
 #get list of files
 files = [f for f in listdir(init_path) if isfile(join(init_path, f))]
