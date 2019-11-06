@@ -17,7 +17,7 @@ from shutil import copyfile
 
 def emp_info(button_number, name):
     
-    with open(emp_info_path + 'emp_info.txt', 'r') as f:
+    with open('employee_info.txt', 'r') as f:
         lines = f.readlines()
         match = 'no'
         for line in lines:
